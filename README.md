@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Project
 
 This project is a simple web page of my current portfolio.
 ==> under progress <==
