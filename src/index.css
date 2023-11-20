@@ -1,13 +1,58 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+ body {
+    margin: 0;
+    padding: 0;
+    background-color: --bs-light-bg-subtle
+    ; /* Or your chosen color */
+  }
+
+#navbar {
+  box-shadow: 0 2px 2px -2px #000; /* Adjust the color and size as needed */
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#title {
+  font-size: 1.5em;
+  text-align: center;
+  color: rgb(112, 154, 216);;
+}
+  
+/* Banner.css */
+.banner {
+    color-scheme: dark;
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    justify-content: space-between; /* Puts maximum space between text and image */
+    
+  }
+  
+.text-container {
+  }
+  
+.image-container {
+    padding: 0 50px; /* Adds padding around the image */
+  }
+  
+.circular-image {
+    border-radius: 50%;
+    width: 100px; 
+    height: 100px;
+    object-fit: cover;
+  }
+  
+@media (max-width: 600px) {
+    .banner {
+      flex-direction: column;
+    }
+  
+.text-container, .image-container {
+      width: 100%;
+      text-align: center; /* Center-align the text for smaller screens */
+    }
+  }
+
+.invisible-wrapper {
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: none;
 }
